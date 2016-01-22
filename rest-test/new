@@ -1,0 +1,21 @@
+import requests 
+
+#for help: http://developer.rovicorp.com/docs
+
+#descriptor/tvcategories?apikey=e3mjb5vkwh4f85yfs5rd753c&sig=c1fd86a0-0d19-40ca-8bca-71d57541e84c?[&categoryids=1391948][&count=1]
+
+#to get all us categories
+http://api.rovicorp.com/data/v1.1/descriptor/tvcategories?apikey=apikey&sig=sig
+
+#requests the first 2 US TV categories
+http://api.rovicorp.com/data/v1.1/descriptor/tvcategories?apikey=apikey&sig=sig&count=2
+
+
+payload = {'categoryids': '1391948', 'count': '1'}
+r = requests.get('http://api.rovicorp.com/data/v1.1/',params=payload)
+
+
+data = r.json()
+
+for row in data:
+    print row

@@ -1,0 +1,236 @@
+Collecting psycopg2
+  Downloading psycopg2-2.5.4.tar.gz (682kB)
+    Error: pg_config executable not found.
+    Please add the directory containing pg_config to the PATH
+    or specify the full executable path with the option:
+        python setup.py build_ext --pg-config /path/to/pg_config build ...
+    or with the pg_config option in 'setup.cfg'.
+    Complete output from command python setup.py egg_info:
+    running egg_info
+    
+    creating pip-egg-info/psycopg2.egg-info
+    
+    writing pip-egg-info/psycopg2.egg-info/PKG-INFO
+    
+    writing top-level names to pip-egg-info/psycopg2.egg-info/top_level.txt
+    
+    writing dependency_links to pip-egg-info/psycopg2.egg-info/dependency_links.txt
+    
+    writing manifest file 'pip-egg-info/psycopg2.egg-info/SOURCES.txt'
+    
+    warning: manifest_maker: standard file '-c' not found
+    
+    
+    
+    Error: pg_config executable not found.
+    
+    
+    
+    Please add the directory containing pg_config to the PATH
+    
+    or specify the full executable path with the option:
+    
+    
+    
+        python setup.py build_ext --pg-config /path/to/pg_config build ...
+    
+    
+    
+    or with the pg_config option in 'setup.cfg'.
+    
+    ----------------------------------------
+    Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-RoJQ8j/psycopg2
+Collecting boto
+  Downloading boto-2.34.0-py2.py3-none-any.whl (1.3MB)
+Installing collected packages: boto
+
+Successfully installed boto-2.34.0
+Collecting lxml
+  Downloading lxml-3.4.1.tar.gz (3.5MB)
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'bugtrack_url'
+      warnings.warn(msg)
+    Building lxml version 3.4.1.
+    Building without Cython.
+    ERROR: /bin/sh: xslt-config: command not found
+    ** make sure the development packages of libxml2 and libxslt are installed **
+    Using build configuration of libxslt
+Installing collected packages: lxml
+  Running setup.py install for lxml
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'bugtrack_url'
+      warnings.warn(msg)
+    Building lxml version 3.4.1.
+    Building without Cython.
+    ERROR: /bin/sh: xslt-config: command not found
+    ** make sure the development packages of libxml2 and libxslt are installed **
+    Using build configuration of libxslt
+    building 'lxml.etree' extension
+    gcc -fno-strict-aliasing -ggdb -O2 -pipe -Wimplicit-function-declaration -fdebug-prefix-map=/usr/src/ports/python/python-2.7.8-1.i686/build=/usr/src/debug/python-2.7.8-1 -fdebug-prefix-map=/usr/src/ports/python/python-2.7.8-1.i686/src/Python-2.7.8=/usr/src/debug/python-2.7.8-1 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/tmp/pip-build-uyMJhF/lxml/src/lxml/includes -I/usr/include/python2.7 -c src/lxml/lxml.etree.c -o build/temp.cygwin-1.7.34-i686-2.7/src/lxml/lxml.etree.o -w
+    unable to execute 'gcc': No such file or directory
+    error: command 'gcc' failed with exit status 1
+    Complete output from command /usr/bin/python2.7 -c "import setuptools, tokenize;__file__='/tmp/pip-build-uyMJhF/lxml/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-em1_xT-record/install-record.txt --single-version-externally-managed --compile:
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'bugtrack_url'
+    
+      warnings.warn(msg)
+    
+    Building lxml version 3.4.1.
+    
+    Building without Cython.
+    
+    ERROR: /bin/sh: xslt-config: command not found
+    
+    
+    
+    ** make sure the development packages of libxml2 and libxslt are installed **
+    
+    
+    
+    Using build configuration of libxslt
+    
+    running install
+    
+    running build
+    
+    running build_py
+    
+    creating build
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/builder.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/cssselect.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/doctestcompare.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/ElementInclude.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/pyclasslookup.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/sax.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/usedoctest.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/_elementpath.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/__init__.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/__init__.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/builder.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/clean.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/defs.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/diff.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/ElementSoup.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/formfill.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/html5parser.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/soupparser.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/usedoctest.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/_diffcommand.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/_html5builder.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/_setmixin.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    copying src/lxml/html/__init__.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/html
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron
+    
+    copying src/lxml/isoschematron/__init__.py -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron
+    
+    copying src/lxml/lxml.etree.h -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/lxml.etree_api.h -> build/lib.cygwin-1.7.34-i686-2.7/lxml
+    
+    copying src/lxml/includes/c14n.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/config.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/dtdvalid.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/etreepublic.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/htmlparser.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/relaxng.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/schematron.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/tree.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/uri.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/xinclude.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/xmlerror.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/xmlparser.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/xmlschema.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/xpath.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/xslt.pxd -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/etree_defs.h -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    copying src/lxml/includes/lxml-version.h -> build/lib.cygwin-1.7.34-i686-2.7/lxml/includes
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/rng
+    
+    copying src/lxml/isoschematron/resources/rng/iso-schematron.rng -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/rng
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl
+    
+    copying src/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl
+    
+    copying src/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl
+    
+    creating build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt -> build/lib.cygwin-1.7.34-i686-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+    
+    running build_ext
+    
+    building 'lxml.etree' extension
+    
+    creating build/temp.cygwin-1.7.34-i686-2.7
+    
+    creating build/temp.cygwin-1.7.34-i686-2.7/src
+    
+    creating build/temp.cygwin-1.7.34-i686-2.7/src/lxml
+    
+    gcc -fno-strict-aliasing -ggdb -O2 -pipe -Wimplicit-function-declaration -fdebug-prefix-map=/usr/src/ports/python/python-2.7.8-1.i686/build=/usr/src/debug/python-2.7.8-1 -fdebug-prefix-map=/usr/src/ports/python/python-2.7.8-1.i686/src/Python-2.7.8=/usr/src/debug/python-2.7.8-1 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/tmp/pip-build-uyMJhF/lxml/src/lxml/includes -I/usr/include/python2.7 -c src/lxml/lxml.etree.c -o build/temp.cygwin-1.7.34-i686-2.7/src/lxml/lxml.etree.o -w
+    
+    unable to execute 'gcc': No such file or directory
+    
+    error: command 'gcc' failed with exit status 1
+    
+    ----------------------------------------
+    Command "/usr/bin/python2.7 -c "import setuptools, tokenize;__file__='/tmp/pip-build-uyMJhF/lxml/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-em1_xT-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-uyMJhF/lxml
