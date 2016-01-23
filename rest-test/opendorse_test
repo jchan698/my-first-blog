@@ -1,0 +1,25 @@
+from HTMLParser import HTMLParser 
+
+# create a subclass and override the handler methods
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print "Encountered a start tag:", tag
+    def handle_endtag(self, tag):
+        print "Encountered an end tag :", tag
+    def handle_data(self, data):
+        print "Encountered some data  :", data
+
+# instantiate the parser and fed it some HTML
+parser = MyHTMLParser()
+parser.feed('http://opendorse.com/blog/top-100-highest-paid-athlete-endorsers-of-2013/'Tiger)
+
+
+#html content
+<!DOCTYPE html><html><head><title></title><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"><script type="text/javascript" src="https://apis.google.com/js/api.js"></script><script type="text/javascript" src="https://oauth.googleusercontent.com/gadgets/js/core:rpc:shindig.random:shindig.sha1.js?c=2"></script><script src='https://ssl.gstatic.com/accounts/o/919662793-postmessagerelay.js'></script></head><body  ></body></html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          <script>(function() {with (this[2]) {with (this[1]) {with (this[0]) {return function(event) {_gaq.push(['_trackEvent', 'outbound-article', 'http://cdn.c.photoshelter.com/img-get/I0000vOpOZlcIQ0U/s/600/480/Tiger-Woods-Smile.jpg', ' smile']);
+};}}}})</script>
+
+#url = "http://opendorse.com/blog/top-100-highest-paid-athlete-endorsers-of-2013/"    
+#html = urlopen(url).read()    
+#raw = nltk.clean_html(html)  
+#print(raw)

@@ -1,0 +1,10 @@
+#NEW
+        
+import requests
+
+payload = {'/events': 'game'}
+response = requests.get('http://api.seatgeek.com/2', params=payload) 
+print(response.url)
+
+data = response.json()
+

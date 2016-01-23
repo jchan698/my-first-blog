@@ -1,0 +1,21 @@
+        
+import wikipedia
+#import list of players
+
+
+cities={}
+
+for row in players
+	wikipedia.search(players[1])
+	page =  wikipedia.page(players[1])
+	
+
+
+	cities = dict(page.title + page.items())
+
+#we wantpage.items to include the city of birth
+
+
+
+
+

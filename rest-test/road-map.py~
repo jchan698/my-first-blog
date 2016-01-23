@@ -1,0 +1,68 @@
+#!/usr/bin/env python
+
+#steps:
+#GOAL is to match extra columns of zip code/coordinates to all athlete locations
+#1.get all athlete information from spotrac.com
+#2.get all athlete city information from the various websites/APIs
+
+#http://www.nba.com/playerfile/ # basketball college, all teams, USE WIKI to look up college acronyms
+#http://espn.go.com/nba/players #basketball home city
+
+#http://www.pro-football-reference.com/players/ #football home city, high school, college, all teams
+
+#http://www.hockey-reference.com/players/ #hockey home city and all teams
+#(will still miss high school/ college for hockey players)
+
+#http://www.baseball-reference.com/players/ #baseball home city, high school, and all teams
+#http://mlb.mlb.com/mlb/players/?tcid=nav_mlb_players #baseball college
+
+#3.use smarty street to get zip codes/coordinates for all cities
+#4.mix and match all information (json) into an excel sheet
+
+
+#PACKAGES TO IMPORT#-------------------------
+#1.
+import urllib2
+import re
+
+#3. package(s) to convert city into zip codes and coordinates
+import requests
+
+#4.
+import xlrd
+import xlwt
+
+#CODING LINE#---------------------------------
+#1.
+
+
+
+html_content = urllib2.urlopen('http://www.spotrac.com/nfl/contracts/').read()
+
+matches = re.findall('DOLLARS', html_content);
+
+if len(matches) == 0: 
+   print 'I did not find anything'
+else:
+   print 'My string is in the html'
+
+
+
+#3. code to convert city into zip codes and coordinates
+params = {
+	'street': '123 Main 52001',
+	'auth-id': 'e076f836-9fbb-4e0c-ab48-3325ea9959f9',
+	'auth-token': 'Ws5ZeW0iNJz013SYnnZk'}
+response = requests.get('https://api.smartystreets.com/street-address', params=params)
+
+data = response.json()
+
+for row in data:
+	print row['components'] [u'zipcode']
+
+
+
+#4. match = re.search(pattern,string)
+if match:
+	process(match)
+
